@@ -1,19 +1,14 @@
 .clock-body {
+  height: 500px;
   background-color: #282c34;
-  min-height: 100vh;
+  display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
 }
 
 .clock-time {
-  height: 500px;
-  width: 800px;
   margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding-top: 70px;
   font-family: 'Courier New', Courier, monospace;
   color: white;
   font-size: 110px;

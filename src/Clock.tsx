@@ -29,9 +29,7 @@ export class Clock extends React.Component<ClockProps> {
     const { appState } = this.props;
     return (
       <div className='clock-body'>
-        <div className='clock-time'>
-          <p>{appState.getTime()}</p>
-        </div>
+        <div className='clock-time'>{appState.getTime()}</div>
       </div>
     );
   }
