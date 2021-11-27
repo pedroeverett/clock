@@ -17,16 +17,15 @@ export class Clock extends React.Component<ClockProps> {
     this.props.appState.setTime(new Date().toLocaleTimeString());
   }
 
-  //   componentDidMount() {
-  //     this.intervalID = window.setTimeout(() => this.updateClock(), 1000);
-  //   }
+  componentDidMount() {
+    this.intervalID = window.setInterval(() => this.updateClock(), 1000);
+  }
 
   componentWillUnmount() {
     clearTimeout(this.intervalID);
   }
 
   public render() {
-    this.intervalID = window.setTimeout(() => this.updateClock(), 1000);
     const { appState } = this.props;
     return (
       <div className='clock-body'>
