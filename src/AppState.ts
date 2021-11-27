@@ -1,9 +1,13 @@
 import { action, observable } from 'mobx';
 
 export class AppState {
-  @observable public count = 0;
+  @observable public time: string;
 
-  @action incCount() {
-    this.count++;
+  @action public setTime(time: string) {
+    this.time = time;
+  }
+
+  public getTime() {
+    return this.time;
   }
 }
