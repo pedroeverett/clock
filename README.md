@@ -1,2 +1,3 @@
-# Portfolio-WebApp
- WebApp that will work as main page to show my portfolio on github.
+# Clocks-WebApp
+
+This small webapp will contain several different clocks made with React.

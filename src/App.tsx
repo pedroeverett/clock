@@ -7,6 +7,7 @@ import { Clock } from './Clock';
 @observer
 export class App extends React.PureComponent {
   private readonly appState = new AppState();
+  // create different states for each clock
   public render() {
     return (
       <div className='clocks'>
